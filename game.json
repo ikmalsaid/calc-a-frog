@@ -1,0 +1,688 @@
+{
+  "firstLayout": "Start",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "folderProject": true,
+    "orientation": "portrait",
+    "packageName": "com.ikmalsaid.CalcGame",
+    "pixelsRounding": false,
+    "projectUuid": "5bc0aefa-a812-43dc-8239-d5e11df5074b",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptHeight",
+    "useExternalSourceFiles": false,
+    "version": "1.1.0",
+    "name": "CALC-A-FROG",
+    "description": "Educational maths game submission for Mini Jam #106. Updated and enhanced just for you! ^^",
+    "author": "ISS PRODUCTIONS",
+    "windowWidth": 720,
+    "windowHeight": 1280,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 60,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": "images\\thumbnail.png"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 1,
+      "backgroundImageResourceName": "images\\splashscreen.png",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": false
+    },
+    "authorIds": [
+      "6KhTpftJxca4kbgWFu11sytmVHo2"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "images/splashscreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\splashscreen.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/menu_bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\menu_bg.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/menu_logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\menu_logo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/startgame_btn1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\startgame_btn1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/startgame_btn2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\startgame_btn2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/leaderboards_btn1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\leaderboards_btn1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/leaderboards_btn2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\leaderboards_btn2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "fonts/berlin.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "fonts\\berlin.fnt",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": true,
+        "file": "fonts/berlin_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fonts\\berlin_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/frog_timer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\frog_timer.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/answer1_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\answer1_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/answer1_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\answer1_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/answer2_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\answer2_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/answer2_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\answer2_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/quit_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\quit_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/quit_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\quit_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/reroll_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\reroll_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/reroll_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\reroll_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/alignment-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\alignment-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/true_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\true_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/true_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\true_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/false_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\false_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/false_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\false_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/game_over.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\game_over.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/your_score.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\your_score.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/playagain_btn1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\playagain_btn1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/playagain_btn2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\playagain_btn2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/mainmenu_btn1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\mainmenu_btn1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/mainmenu_btn2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\mainmenu_btn2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/guide.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\guide.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "audio/menu.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "audio\\menu.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "audio/game.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "audio\\game.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "audio/frog.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "audio\\frog.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/thumbnail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\thumbnail.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "name": "menu_bg",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "images\\menu_bg.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "menu_bg2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "images\\menu_bg.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "berlin_text",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [
+        {
+          "name": "id",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "0000",
+        "opacity": 255,
+        "scale": 0.7,
+        "fontSize": 20,
+        "tint": "255;255;190",
+        "bitmapFontResourceName": "fonts\\berlin.fnt",
+        "textureAtlasResourceName": "fonts\\berlin_0.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "name": "alignment",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "id",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SineMovement",
+          "type": "SineMovement::SineMovement",
+          "HorizontalSpeed": 150,
+          "VerticalSpeed": 150,
+          "HorizontalDistance": 4,
+          "VerticalDistance": 6,
+          "CenterPointX": 0,
+          "CenterPointY": 0,
+          "SineProgressX": 0,
+          "SineProgressY": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "alignment",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "images\\alignment-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "frog_timer",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SineMovement",
+          "type": "SineMovement::SineMovement",
+          "HorizontalSpeed": 150,
+          "VerticalSpeed": 150,
+          "HorizontalDistance": 4,
+          "VerticalDistance": 6,
+          "CenterPointX": 0,
+          "CenterPointY": 0,
+          "SineProgressX": 0,
+          "SineProgressY": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "images\\frog_timer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "rand1",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "rand2",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "answer",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "correct",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "wrong",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "upload",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game4"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/end"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sinemovement"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
